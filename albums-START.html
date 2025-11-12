@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Nesting Grid with Album Layouts!</title>
+</head>
+
+<body>
+
+  <div class="albums">
+    <div class="album">
+      <img class="album__artwork" src="images/Crushing.png">
+      <div class="album__details">
+        <h2>Crushing</h2>
+        <p class="album__artist">Julia Jacklin</p>
+        <p class="album__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed sint doloremque repellat, iste debitis.</p>
+        <p class="album__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, excepturi!</p>
+      </div>
+    </div>
+    <div class="album">
+      <img class="album__artwork" src="images/howbig.png">
+      <div class="album__details">
+        <h2>How Big How Blue How Beautiful</h2>
+        <p class="album__artist">Florence and the Machine</p>
+        <p class="album__desc">short.</p>
+      </div>
+    </div>
+    <div class="album">
+      <img class="album__artwork" src="images/homework.jpg">
+      <div class="album__details">
+        <h2>Homework</h2>
+        <p class="album__artist">Daft Punk</p>
+        <p class="album__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed sint doloremque repellat, iste debitis.</p>
+      </div>
+    </div>
+    <div class="album">
+      <img class="album__artwork" src="images/nfr.png">
+      <div class="album__details">
+        <h2>Norman Fucking Rockwell</h2>
+        <p class="album__artist">Lana Del Rey</p>
+        <p class="album__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed sint doloremque repellat, iste debitis.</p>
+      </div>
+    </div>
+    <div class="album">
+      <img class="album__artwork" src="images/eurocountry.jpeg">
+      <div class="album__details">
+        <h2>Euro Country</h2>
+        <p class="album__artist">CMAT</p>
+        <p class="album__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed sint doloremque repellat, iste debitis.</p>
+      </div>
+    </div>
+    <div class="album">
+      <img class="album__artwork" src="images/dorajar.jpg">
+      <div class="album__details">
+        <h2>No Way To Relax When You Are On Fire</h2>
+        <p class="album__artist">Dora Jar</p>
+        <p class="album__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed sint doloremque repellat, iste debitis.</p>
+      </div>
+    </div>
+    <div class="album">
+      <img class="album__artwork" src="images/Paramore.png">
+      <div class="album__details">
+        <h2>This is Why</h2>
+        <p class="album__artist">Paramore</p>
+        <p class="album__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed sint doloremque repellat, iste debitis.</p>
+      </div>
+    </div>
+    <div class="album">
+      <img class="album__artwork" src="images/wolfalice.jpg">
+      <div class="album__details">
+        <h2>The Clearing</h2>
+        <p class="album__artist">Wolf Alice</p>
+        <p class="album__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed sint doloremque repellat, iste debitis.</p>
+      </div>
+    </div>
+    <div class="album">
+      <img class="album__artwork" src="images/Mayhem.png">
+      <div class="album__details">
+        <h2>Mayhem</h2>
+        <p class="album__artist">Lady Gaga</p>
+        <p class="album__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed sint doloremque repellat, iste debitis.</p>
+      </div>
+    </div>
+    <div class="album">
+      <img class="album__artwork" src="images/PureComedy.jpg">
+      <div class="album__details">
+        <h2>Pure Comedy</h2>
+        <p class="album__artist">Father John Misty</p>
+        <p class="album__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed sint doloremque repellat, iste debitis.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <style>
+.albums {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 20px;
+}
+.album {
+  background: rgba(225, 225, 225,0.2);
+  box-shadow: 0 0 5px rbga(0, 0, 0, 0.1);
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-gap: 10px;
+  align-items: center;
+  color: white;
+  font-weight: 100;
+}
+.album__artwork {
+  width: 100%;
+}
+  </style>
+</body>
+
+</html>
